@@ -1,0 +1,12 @@
+name: workflow for learning workflow
+on: push
+
+jobs:
+  build:
+    name: building this codebase
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - uses: ./action-a
+        with:
+          MY_NAME: "Shakil"
