@@ -1,0 +1,18 @@
+name: "Hello actions"
+description: "greet someone"
+author: "shakilofficial7@gmail.com"
+
+inputs:
+  MY_NAME:
+    description: "who to greet"
+    required: true
+    default: "world"
+
+runs:
+  using: "docker"
+  image: "Dockerfile"
+
+branding:
+  icon: "mic"
+  color: "purple"
+  
